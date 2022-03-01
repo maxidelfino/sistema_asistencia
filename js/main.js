@@ -25,7 +25,7 @@ for (alumno in alumnosTotales) {
     _____Días de clases: ${mes}
     _____Presentes: ${alumnosTotales[alumno][1]}
     _____Ausentes: ${mes - alumnosTotales[alumno][1]}`;
-    if ((mes*0.1) < (mes - alumnosTotales[alumno][1])){
+    if ((mes*0.15) < (mes - alumnosTotales[alumno][1])){
         res+= ` Reprobado por inasistencias`;
     }
     console.log(res);
